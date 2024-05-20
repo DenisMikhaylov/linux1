@@ -58,6 +58,10 @@ $top
 
 $htop
 ```
+Если команда htop не найете выполните команду 
+```
+apt install htop
+```
 2. Выяснить состояние SSH службы
 ```
 $systemctl status sshd
