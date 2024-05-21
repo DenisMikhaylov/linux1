@@ -31,7 +31,7 @@ $ sudo passwd user1
 $ sudo useradd -m rocky
 $ sudo useradd -m bullwinkle
 $ sudo passwd rocky
-$ sudo passwd Bullwinkle
+$ sudo passwd bullwinkle
 $ ls -l /home
 $ sudo groupadd friends
 $ sudo groupadd -g 490 bosses
