@@ -1,3 +1,6 @@
+
+Для эксперементов добавьте дополнительный сетевой адаптер в виртуальной машине и подключите к приватному свитчу.
+
 Задание 1
 ```
 $ ip addr show eth0
@@ -19,7 +22,7 @@ $ sudo ifconfig eth0 down
 Задание 2
 ```
 
-$ sudo sh -c "echo 192.168.1.180 mysystem.mydomain >> /etc/hosts"
+$ sudo sh -c "echo <ip host> mysystem.mydomain >> /etc/hosts"
 
 $ ping mysystem.mydomain
 
@@ -66,4 +69,28 @@ $ sudo nmcli conn up " Имя адаптера "
 $ sudo ip route add 192.168.100.0/24 via 172.16.2.1
 
 $ sudo route
+```
+Задание 5
+```
+Настройка сетевого интерфейса
+nano /etc/network/interfaces
+
+Посмотретьназвание сетевого адаптера
+ip a
+
+auto lo
+iface lo inet loopback
+
+auto <название сетевого адаптера>
+iface <название сетевого адаптера> inet static
+        address 172.16.1.10
+        netmask 255.255.255.0
+        gateway 172.16.1.254
+
+альтернативный вариант
+
+auto <название сетевого адаптера>
+iface <название сетевого адаптера> inet static
+        address 172.16.1.10/24
+        gateway 172.16.1.254
 ```
