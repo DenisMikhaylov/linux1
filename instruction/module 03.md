@@ -74,11 +74,13 @@ $ sudo route
 ```
 Задание 5
 ```
+Посмотреть название сетевого адаптера
+ip a
+
 Настройка сетевого интерфейса
 nano /etc/network/interfaces
 
-Посмотретьназвание сетевого адаптера
-ip a
+
 
 auto lo
 iface lo inet loopback
