@@ -1,5 +1,5 @@
 Задание 7.1 Git
-
+```
 
 $ mkdir git-test
 $ cd git-test
@@ -78,3 +78,4 @@ $ hello
 
 # snap remove hello
 
+```
