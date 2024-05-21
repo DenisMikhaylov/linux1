@@ -94,3 +94,5 @@ iface <название сетевого адаптера> inet static
         address 172.16.1.10/24
         gateway 172.16.1.254
 ```
+Возможное будущее
+https://github.com/canonical/netplan/tree/main/examples
