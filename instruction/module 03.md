@@ -24,7 +24,7 @@ $ sudo ifconfig eth0 down
 Задание 2
 ```
 
-$ sudo sh -c "echo <ip host> mysystem.mydomain >> /etc/hosts"
+# sh -c "echo <ip host> mysystem.mydomain >> /etc/hosts"
 
 $ ping mysystem.mydomain
 
