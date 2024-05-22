@@ -20,6 +20,10 @@ nano /etc/fstab
 ```
 /dev/sdb1 /mnt/sdb1 ext4 defaults 0 0
 ```
+
+```
+Mount /mnt/sdb1
+```
 Создаем раздел на диске
 
 ```
