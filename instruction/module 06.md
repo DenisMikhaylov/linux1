@@ -94,3 +94,22 @@ KILL
 
 # kill -KILL <PID>
 ```
+
+Управление процессами с ulimit
+
+```
+$ ulimit -n
+
+$ ulimit -S -n
+1024
+
+$ ulimit -H -n
+4096
+
+$ ulimit -n 2048
+
+$ ulimit -n
+2048
+```
+
+
