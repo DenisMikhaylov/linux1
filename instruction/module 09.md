@@ -22,7 +22,7 @@ nano /etc/fstab
 ```
 
 ```
-Mount /mnt/sdb1
+mount /mnt/sdb1
 ```
 Создаем раздел на диске
 
