@@ -40,3 +40,44 @@ $ ls -F
 • /proc/partitions:
 • /proc/interrupts:
 ```
+```
+touch appendit
+lsattr appendit
+----ia-------e- appendit
+$ chattr -ia appendit
+$ rm appendit
+rm: remove regular file `appendit'? y
+$ ls appendit
+ls: cannot access appendit: No such file or directory
+```
+```
+$ cd /tmp
+$ touch appendit
+$ ls -l appendit
+$ cat /etc/hosts > appendit
+$ diff /etc/hosts appendit
+$ chattr +a appendit
+$ chattr +a appendit
+$ lsattr appendit
+$ cat /etc/passwd > appendit
+$ sudo -i
+$ cat /etc/passwd > appendit
+bash: appendit: Operation not permitted
+$ exit
+
+$ cat /etc/passwd >> /tmp/appendit
+$ cat appendit
+$ sudo chattr +i appendit
+$ lsattr appendit
+----ia-------e- appendit
+$ echo hello >> appendit
+$ mv appendit appendit.rename
+$ ln appendit appendit.hardlink
+$ rm -f appendit
+$ sudo -i
+$ echo hello >> appendit
+$ mv appendit appendit.rename
+$ ln appendit appendit.hardlink
+$ rm -f appendit
+$ exit
+```
