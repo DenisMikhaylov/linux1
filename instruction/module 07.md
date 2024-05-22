@@ -24,7 +24,7 @@ $ systemctl status ssh
 
 Создание fake сервиса
 ```
-nano /etc/systemd/system/fake2
+nano /etc/systemd/system/fake2.service
 ```
 ```
 [Unit]
