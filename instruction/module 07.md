@@ -1,13 +1,13 @@
 Управление юнитами Systemd
 ```
-$ systemctl -a
-$ systemctl list-units
+# systemctl -a
+# systemctl list-units
 
 # find /lib/systemd/system/
 
 # find /etc/default/
 
-$ systemctl status ssh
+# systemctl status ssh
 
 # systemctl stop ssh
 # systemctl start ssh
