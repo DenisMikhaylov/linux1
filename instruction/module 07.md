@@ -18,7 +18,7 @@ $ systemctl status ssh
 
 ```
 ```
-# cat /etc/systemd/system/sshvpn.service
+# cat /etc/systemd/system/ssh.service
 ```
 Посмотреть содержимое файла.
 
