@@ -81,3 +81,16 @@ $ ln appendit appendit.hardlink
 $ rm -f appendit
 $ exit
 ```
+```
+touch test
+ln test testh
+ln -s test tests
+
+ls -l
+cat test
+cat testh
+echo test > test
+cat test
+cat testh
+
+```
