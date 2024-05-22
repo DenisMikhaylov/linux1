@@ -34,7 +34,15 @@ mkdir mnt/sdb1
 mount /dev/sdb1 /mnt/sdb1
 ```
 
-
+Cоздание SWAP
+```
+cat /proc/swaps
+```
+```
+dd if=/dev/zero of=swpfile bs=1M count=1024
+mkswap swpfile
+swapon swpfile
+```
 LVM
 
 Подключить к виртуальной машине 5 дополнительных жестких дисков
