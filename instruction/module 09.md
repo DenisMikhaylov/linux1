@@ -12,6 +12,14 @@ mkfs.ext4 imagefile
 mkdir mntpoint
 mount -o loop imagefile mntpoint
 ```
+
+Подключение диска
+```
+nano /etc/fstab
+```
+```
+/dev/sdb1 /mnt/sdb1 ext4 defaults 0 0
+```
 Создаем раздел на диске
 
 ```
