@@ -12,7 +12,15 @@ mkfs.ext4 imagefile
 mkdir mntpoint
 mount -o loop imagefile mntpoint
 ```
+Создаем раздел на диске
 
+```
+fdisk sdb
+создайте первичный раздел на 500 МБ
+mkfs.ext4 /dev/sdb1
+mkdir mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 Подключение диска
 ```
 nano /etc/fstab
@@ -24,15 +32,7 @@ nano /etc/fstab
 ```
 mount /mnt/sdb1
 ```
-Создаем раздел на диске
 
-```
-fdisk sdb
-создайте первичный раздел на 500 МБ
-mkfs.ext4 /dev/sdb1
-mkdir mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1
-```
 
 Cоздание SWAP
 ```
