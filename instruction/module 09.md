@@ -14,6 +14,15 @@ mount -o loop imagefile mntpoint
 ```
 Создаем раздел на диске
 
+```
+fdisk sdb
+создайте первичный раздел на 500 МБ
+mkfs.ext4 /dev/sdb1
+mkdir mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
+
+
 LVM
 
 Подключить к виртуальной машине 5 дополнительных жестких дисков
