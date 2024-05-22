@@ -1,6 +1,8 @@
 Управление юнитами Systemd
 ```
-# systemctl -a
+systemctl -a
+```
+```
 # systemctl list-units
 
 # find /lib/systemd/system/
