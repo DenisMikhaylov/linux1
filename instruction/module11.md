@@ -44,6 +44,8 @@ $ bonnie++ -help
 $ time sudo bonnie++ -n 0 -u 0 -r 100 -f -b -d /mnt
 
 $ bon_csv2html < bonnie++.out > bonnie++.html
+или
+# echo 'csv' | bon_csv2html > bonnie++.html
 ```
 Задача 5
 ```
