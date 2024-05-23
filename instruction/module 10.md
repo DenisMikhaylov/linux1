@@ -73,7 +73,7 @@ TAR
 
 du -sh /usr/include
 ls -lh /tmp/backup/include.tar.*
-tar tvf include.tar.xz
+tar tvf /tmp/backup/include.tar.xz
 
 # cd .. ; mkdir restore ; cd restore
 # tar xvf ../backup/include.tar.bz2
