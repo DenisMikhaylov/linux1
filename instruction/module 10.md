@@ -76,7 +76,7 @@ ls -lh /tmp/backup/include.tar.*
 tar tvf /tmp/backup/include.tar.xz
 
 # cd .. ; mkdir restore ; cd restore
-# tar xvf ../backup/include.tar.bz2
+# tar xvf /tmp/backup/include.tar.bz2
 ```
 Задача 3
 
@@ -91,4 +91,4 @@ $ rsync -av --delete /usr/include .
 $ rm -rf include/xen
 $ rsync -av --delete --dry-run /usr/include .
 $ rsync -av --delete 	/usr/include .
-```vpn.
+```
