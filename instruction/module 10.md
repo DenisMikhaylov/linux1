@@ -3,6 +3,7 @@
 Создание пустого файла
 
 ```
+# mkdir /disk2
 # dd if=/dev/zero of=/disk2/filedisk bs=1M count=100
 ```
 CPIO
