@@ -22,7 +22,7 @@ CPIO
 ```
 # cd /tmp; bzcat /mnt/etc.cpio.bz2 | cpio -id etc/clamav/clamd.conf
 
-# cd /tmp; bzcat /mnt/etc.cpio.bz2 | cpio -id -E filelist.txt
+# cd /tmp; bzcat /mnt/etc.cpio.bz2 | cpio -id -E fstab
 ```
 Распаковка всего архива
 ```
