@@ -50,6 +50,7 @@ $ bon_csv2html < bonnie++.out > bonnie++.html
 Задача 5
 ```
 $ fs_mark -d /tmp -n 1000 -s 10240
+$ fs_mark -d /mnt/sdb1 -n 1000 -s 10240
 ```
 Пока это работает, соберите расширенную статистику iostat с помощью:
 ```
@@ -61,5 +62,6 @@ $ iostat -x -d /dev/sda 2 20
 
 Например, для ext3 или ext4 вы можете попробовать:
 ```
-$ mount -o remount,journal_async_commit /tmp
+# mount -o remount,journal_async_commit /tmp
+# mount -o remount,journal_async_commit /mnt/sdb1
 ```
