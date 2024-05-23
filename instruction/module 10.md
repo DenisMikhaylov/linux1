@@ -72,7 +72,7 @@ TAR
 # cd /usr ; tar Jcvf /tmp/backup/include.tar.xz include
 
 du -sh /usr/include
-ls -lh include.tar.*
+ls -lh /tmp/backup/include.tar.*
 tar tvf include.tar.xz
 
 # cd .. ; mkdir restore ; cd restore
