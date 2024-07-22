@@ -23,8 +23,6 @@
 
 # cat /proc/cpuinfo
 ```
-3. добавить пользователя student/password
-4. Установить в linux ssh
 
 Задание 3: Анализ ядра, модулей
 
