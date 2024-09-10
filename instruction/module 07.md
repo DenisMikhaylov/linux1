@@ -49,7 +49,7 @@ systemctl stop fake2.service
 
 Проверка лога
 ```
-tail -f /var/log/messages
+tail -f /var/log/syslog
 ```
 ```
 systemctl enable fake2.service
