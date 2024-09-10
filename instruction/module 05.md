@@ -78,4 +78,8 @@ Ubuntu security notices
 
 # snap remove hello
 
+# snap install powershell --classic
+# Powershell
+# dir /
+
 ```
